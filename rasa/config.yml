@@ -21,8 +21,8 @@ pipeline:
   number_of_transformer_layers: 1      # Один слой трансформера
   use_masked_language_model: false     # Отключено для ускорения
   batch_strategy: "balanced"
-  hidden_layers_sizes: null
-  text: [32]               # Минимальные скрытые слои
+  hidden_layers_sizes:
+    text: [32]               # Минимальные скрытые слои
 
 - name: EntitySynonymMapper         # Маппер синонимов сущностей
 - name: ResponseSelector          # Минимальный выбор ответа
