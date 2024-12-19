@@ -7,13 +7,12 @@ stories:
       - action: utter_greet
       - intent: ask_architecture
       - action: utter_architecture_response
+      - intent: request_info
+      - action: utter_microservices
+      - intent: request_details
+      - action: utter_implement_ms
 
   - story: goodbye
     steps:
       - intent: goodbye
       - action: utter_goodbye
-
-  - story: ask for more info
-    steps:
-      - intent: request_info
-      - action: utter_ask_more

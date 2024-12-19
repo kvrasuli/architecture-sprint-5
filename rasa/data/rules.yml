@@ -19,4 +19,9 @@ rules:
   - rule: Request additional information
     steps:
       - intent: request_info
-      - action: utter_ask_more
+      - action: utter_microservices
+
+  - rule: Request details
+    steps:
+      - intent: request_details
+      - action: utter_implement_ms
